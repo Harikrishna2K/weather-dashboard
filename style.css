@@ -6,13 +6,32 @@
     align-items: center;
     
 }
-.weather-app-dashboard{
-    background: linear-gradient(#90EE90,#00008B);
+
+.weather-main-dashboard{
+    background: linear-gradient(#90EE90,#76768d);
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
     width: 100%; /* Take full width of the column */
-    padding-bottom: 20em;
-    padding-top: 22px;
+    padding-top: 25px;
+    padding-bottom: 18px;
+}
+
+
+.weather-app-dashboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+.weather-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .search-bar{
     display: flex;
@@ -33,3 +52,40 @@
     width: 40px;
     height: 40px;
 }
+.weather-app-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.weather-app-image img{
+    width: 50px;
+    height: 50px;
+}
+.weather-humidity img,
+.weather-wind img{
+    width: 30px;
+    height: 30px;
+}
+.weather-wind img{
+    text-align: right;
+}
+.col-lg-6 .row {
+    display: flex;
+    justify-content: space-between; /* Pushes items to far ends */
+}
+.weather-humidity{
+    padding-left: 20px;
+}
+.weather-humidity {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
+}
+.weather-wind{
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: right;
+}
+
